@@ -1,0 +1,29 @@
+{
+    "title": "Business Intelligence Aggregator",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "targetCompany": {
+            "title": "Company Name or Domain",
+            "type": "string",
+            "description": "Company name or website domain to analyze"
+        },
+        "analysisDepth": {
+            "title": "Analysis Depth",
+            "type": "string",
+            "enum": ["basic", "standard", "comprehensive"],
+            "default": "standard"
+        },
+        "includeSentiment": {
+            "title": "Include Sentiment Analysis",
+            "type": "boolean",
+            "default": true
+        },
+        "includeJobPostings": {
+            "title": "Include Job Market Analysis",
+            "type": "boolean", 
+            "default": true
+        }
+    },
+    "required": ["targetCompany"]
+}
