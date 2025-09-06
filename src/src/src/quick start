@@ -1,0 +1,14 @@
+# 1. Initialize your Actor
+npx apify-cli create business-intel-aggregator
+
+# 2. Navigate to project
+cd business-intel-aggregator
+
+# 3. Install dependencies
+npm install crawlee playwright openai
+
+# 4. Test locally
+npm start
+
+# 5. Deploy to Apify
+npx apify-cli push
